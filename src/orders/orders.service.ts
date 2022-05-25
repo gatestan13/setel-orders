@@ -59,9 +59,8 @@ export class OrdersService {
 
     console.log(headers);
 
-    //TODO Change to localhost
     const response = await axios.post(
-      'http://192.168.1.131:3333/payments/process',
+      'http://localhost:3333/payments/process',
       { orderKey: orderDto.orderKey },
       {
         headers,
